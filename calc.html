@@ -1,0 +1,157 @@
+<html>
+<br>
+<br>
+<h1>KalKulator</h1>
+<meta name="description" content="math.js | basic usage">
+<title>CALC</title>
+<script src="https://unpkg.com/mathjs/dist/math.min.js"></script>
+</head>
+<link rel="stylesheet" type="text/css" href="cal_style.css" />
+
+<body>
+    <div id="screen1">
+
+    </div>
+    <div id="inp">
+        <input type="textarea" id="main" contenteditable="false">
+    </div>
+    <div id="w789"><span>
+        <button id="CC" onclick="result15()">C</button>
+        <button id="Del" onclick="result16()"><</button>
+        <button id="CE" onclick="result17()">CE</button>
+        <button id="dvd" value="/" onclick="result10()">/</button>
+        <br>
+        <button id="7" value="7" onclick="result7()">7</button>
+        <button id="8" value="8" onclick="result8()">8</button>
+        <button id="9" value="9" onclick="result9()">9</button>
+        <button id="*" value="*" onclick="result11()">*</button>
+        <br>
+        <button id="4" value="4" onclick="result4()">4</button>
+        <button id="5" value="5" onclick="result5()">5</button>
+        <button id="6" value="6" onclick="result6()">6</button>
+        <button id="-" value="-" onclick="result12()">-</button>
+        <br>
+        <button id="1" value="1" onclick="result1()">1</button>
+        <button id="2" value="2" onclick="result2()">2</button>
+        <button id="3" value="3" onclick="result3()">3</button>
+        <button id="plus" value="+" onclick="result13()">+</button>
+        <br>
+        <button id="0" value="0" onclick="result0()">0</button>
+        <button id="dot" value="." onclick="result14()">.</button>
+        <button id="eq" onclick="result18()">=</button>
+    </div>
+    <script>
+        function result1() {
+            var x = document.getElementById("1").value;
+            var y = document.getElementById("main").value;
+            document.getElementById("main").value = y + x;
+        }
+
+        function result2() {
+            var x = document.getElementById("2").value;
+            var y = document.getElementById("main").value;
+            document.getElementById("main").value = y + x;
+        }
+
+        function result3() {
+            var x = document.getElementById("3").value;
+            var y = document.getElementById("main").value;
+            document.getElementById("main").value = y + x;
+        }
+
+        function result4() {
+            var x = document.getElementById("4").value;
+            var y = document.getElementById("main").value;
+            document.getElementById("main").value = y + x;
+        }
+
+        function result5() {
+            var x = document.getElementById("5").value;
+            var y = document.getElementById("main").value;
+            document.getElementById("main").value = y + x;
+        }
+
+        function result6() {
+            var x = document.getElementById("6").value;
+            var y = document.getElementById("main").value;
+            document.getElementById("main").value = y + x;
+        }
+
+        function result7() {
+            var x = document.getElementById("7").value;
+            var y = document.getElementById("main").value;
+            document.getElementById("main").value = y + x;
+        }
+
+        function result8() {
+            var x = document.getElementById("8").value;
+            var y = document.getElementById("main").value;
+            document.getElementById("main").value = y + x;
+        }
+
+        function result9() {
+            var x = document.getElementById("9").value;
+            var y = document.getElementById("main").value;
+            document.getElementById("main").value = y + x;
+        }
+
+        function result0() {
+            var x = document.getElementById("0").value;
+            var y = document.getElementById("main").value;
+            document.getElementById("main").value = y + x;
+        }
+
+        function result10() {
+            var x = document.getElementById("dvd").value;
+            // var y = document.getElementById("main").value;
+            var y = document.getElementById("main").value;
+            document.getElementById("main").value = y + x;
+        }
+
+        function result11() {
+            var x = document.getElementById("*").value;
+            var y = document.getElementById("main").value;
+            document.getElementById("main").value = y + x;
+        }
+
+        function result12() {
+            var x = document.getElementById("-").value;
+            var y = document.getElementById("main").value;
+            document.getElementById("main").value = y + x;
+        }
+
+        function result13() {
+            var x = document.getElementById("plus").value;
+            var y = document.getElementById("main").value;
+            document.getElementById("main").value = y + x;
+        }
+
+        function result14() {
+            var x = document.getElementById("dot").value;
+            var y = document.getElementById("main").value;
+            document.getElementById("main").value = y + x;
+        }
+
+        function result16() {
+            var y = document.getElementById("main").value;
+            var m = y.slice(0, -1);
+            document.getElementById("main").value = m;
+        }
+
+        function result18() {
+            var s = document.getElementById("main").value;
+            var i = math.eval(s);
+            document.getElementById("main").value = i;
+        }
+
+        function result15() {
+            document.getElementById("main").value = "";
+        }
+
+        function result17() {
+            document.getElementById("main").value = "";
+        }
+    </script>
+</body>
+
+</html>

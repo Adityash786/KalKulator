@@ -1,0 +1,160 @@
+h1 {
+    text-align: center;
+    font-family: Papyrus, fantasy;
+    font-size: 44px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    animation: move 2s;
+    -webkit-animation: move 2s;
+}
+
+@keyframes move {
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes move {
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+#inp {
+    width: 250px;
+    height: 60px;
+    padding-top: 0px;
+    padding-right: 160px;
+    padding-bottom: 0px;
+    padding-left: 575px;
+}
+
+#screen1 {
+    width: 250px;
+    height: 30px;
+}
+
+#w789 {
+    padding-top: 0px;
+    padding-right: 160px;
+    padding-bottom: 20px;
+    padding-left: 575px;
+}
+
+button {
+    color: rgb(51, 20, 6);
+    font: old 84% 'trebuchet ms', helvetica, sans-serif;
+    background-color: rgb(115, 243, 126);
+    border: 3px solid;
+    border-color: rgb(46, 30, 99) rgb(46, 30, 99) rgb(46, 30, 99) rgb(46, 30, 99);
+    padding: 15px;
+    margin-bottom: 4px;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: #f1515f
+}
+
+button:active {
+    background-color: #f1515f;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#CC {
+    padding-top: 15px;
+    padding-right: 14px;
+    padding-bottom: 15px;
+    padding-left: 13px;
+}
+
+#Del {
+    padding-top: 15px;
+    padding-right: 16px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+#CE {
+    padding-top: 15px;
+    padding-right: 9px;
+    padding-bottom: 15px;
+    padding-left: 9px;
+}
+
+#dot {
+    padding-top: 15px;
+    padding-right: 17px;
+    padding-bottom: 15px;
+    padding-left: 17px;
+}
+
+#plus {
+    padding-top: 15px;
+    padding-right: 13px;
+    padding-bottom: 15px;
+    padding-left: 14px;
+}
+
+#dvd {
+    padding-top: 15px;
+    padding-right: 16px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+#eq {
+    padding-top: 15px;
+    padding-right: 37px;
+    padding-bottom: 15px;
+    padding-left: 37px;
+}
+
+#main {
+    height: 40px;
+    width: 185px;
+    border: 3px solid;
+    border-color: rgb(46, 30, 99) rgb(46, 30, 99) rgb(46, 30, 99) rgb(46, 30, 99);
+}
+
+body {
+    background-color: blueviolet;
+}
